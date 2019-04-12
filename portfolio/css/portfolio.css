@@ -1,0 +1,531 @@
+@charset "utf-8";
+
+body{
+    margin: 0 0;
+    font-family:  '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+}
+
+/* 헤더 영역 */
+header{
+    margin-top: 0;
+    height: 120px;
+    background-color: #000;
+}
+
+header div{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+header h1{
+    padding-top: 40px;
+    margin-top: 0;
+    margin-left:40px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* body */
+.con{
+    margin: 0 0;
+}
+
+.con .container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: block;
+}
+
+.listA{
+    display: flex;
+    margin : 40px;
+}
+
+.con a{
+    line-height: 2;
+    flex: auto;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    color: #000;
+    margin-right: 14px;
+}
+
+.con a:last-child{
+    margin-right: 0;
+}
+
+.con a:hover{
+    border-color: #454545;
+    font-weight: bold;
+}
+
+/* 테이블 영역 */
+
+.title{
+    margin : 20px 40px ;
+    border-bottom: 1px solid #454545;
+}
+
+.title h2{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.box{
+    margin : 20px 40px;
+    border: 1px solid #d1d1d1;
+}
+
+.box h3{
+    padding-left: 15px;
+    line-height: 2;
+    margin-top: 0;
+    border-bottom: 1px solid #d1d1d1;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    color:#333;
+    font-weight: bold;
+}
+
+.box .content{
+    margin : 30px 30px;
+}
+
+.box .content h4{
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    color: #555;
+    
+}
+
+table caption{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.sizetable, 
+.sizetable th,
+.sizetable td{
+    text-align: center;
+    border : 1px solid #e4e4e4;
+    height: 30px;
+}
+
+.sizetable thead{
+    background-color: #fbfbfb;
+    font-weight: bold;
+}
+
+.sizetable tbody tr td:first-child,
+.sizetable tbody .tsize{
+    font-weight: bold;
+}
+
+.moneytable{
+    border-top: 2px solid #a5a5a5;
+    text-align: right;
+}
+
+.moneytable td,
+.moneytable tr,
+.moneytable th{
+    height: 35px;
+    padding-right: 50px;
+}
+
+.moneytable tfoot{
+    background-color: #fbfbfb;
+    border-top: 1px solid #a5a5a5;
+    border-bottom: 1px solid #e4e4e4;
+    font-weight: bold;
+}
+
+.moneytable tbody{
+    border-top: 1px solid #e4e4e4;
+}
+
+.moneytable thead tr th:first-child,
+.moneytable tfoot tr td:first-child,
+.moneytable tbody tr td:first-child{
+    text-align: center;
+    padding-right: 0;
+}
+
+/* 폼 영역 */
+
+.form-container{
+    border: 1px solid #e4e4e4;
+    background-color: #fbfbfb;
+    margin: 0 0 ;
+}
+
+.form-input{
+    margin: 10px 15px;
+    line-height: 2;
+}
+
+.form-input label{
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    display: block;
+}
+
+.form-input input{
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    color:#000;
+    height: 22px;
+    border:1px solid #e4e4e4;
+    text-indent: 10px;
+}
+
+.form-select{
+    display: flex;
+} 
+
+.form-input select{
+    display: inline-block;
+    flex: auto;
+    font-size: 12px;
+    height: 22px;
+    color:#000;
+    margin-right: 14px;
+    height: 24px;
+    border : 1px solid #e4e4e4;
+}
+
+.form-input select:last-child{
+    margin-right: 0;
+}
+
+.form-radio{
+    display: block;
+    flex: auto;
+}
+
+.form-radio-box{
+    display: inline-flex;
+    flex: auto;
+    margin-right: 20px;
+}
+
+.form-radio .form-radio-box input[type="radio"]{
+    width: auto;
+    font-size: 12px;
+    color: #000;
+}
+
+.form-radio-box label{
+    font-size: 12px;
+    color: #000;
+    font-weight: normal;
+}
+
+/* 전화번호 */
+.form-phone-box{
+    margin: 0 0;
+    display: block;
+}
+
+.form-phone-box input[type="tel"],
+.form-phone-box button{
+    display: inline;
+}
+
+.form-phone-box input[type="tel"]{
+    width: 70%;
+}
+
+.form-phone-box button{
+    width:28%;
+    border: 1px solid #08a600;
+    background-color: #4ec53d;
+    font-size: 12px;
+    color: #fff;
+    height: 24px;
+    margin-left:4px;
+}
+
+.form-phone-box button:hover{
+    cursor: pointer;
+}
+
+/* 취미 */
+.box-check{
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.box-check input[type="checkbox"]+label,
+.box-check input[type="checkbox"]{
+    font-size: 12px;
+    color:#000;
+    font-weight: normal;
+    display: inline-block;
+    width: auto;
+    flex: auto;
+}
+
+/* 가입인사 */
+.form-input textarea{
+    width: 99%;
+}
+
+/* 가입버튼 */
+.form-input > button{
+    border: 1px solid #08a600;
+    background-color: #4ec53d;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    line-height: 2;
+}
+
+.form-input > button:hover{
+    cursor: pointer;
+}
+
+/* 리스트 영역 */
+.box-project{
+    border: 1px solid #e4e4e4;
+    padding: 10px 15px;
+}
+
+.box-project h1{
+    text-align: center;
+    background: none;
+    font-size: 32px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.box-project-content{
+    color: #000;
+    font-size: 12px;
+}
+.box-project-content .title-project{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box-project-content span{
+    color: #559bfa;
+    font-size: 12px;
+}
+
+.box-project-content .text-project{
+    line-height: 1.5;
+}
+
+/* 실시간 검색어 */
+
+.box-live{
+    width: 25%;
+    border: 1px solid #e4e4e4;
+    padding: 10px 15px;
+}
+
+.box-live ol::-moz-list-bullet{
+   list-style: none; 
+   list-style-type: decimal;
+   border: 1px solid #e4e4e4;
+   font-size: 10px;
+   color: #666;
+}
+
+.box-live li{
+    padding: 3px;
+    font-size: 12px;
+    color: #000;
+}
+
+
+.box-live li a{
+    text-decoration: none;
+    border: none;
+}
+
+.box-live li a:hover{
+    text-decoration: underline;
+}
+
+
+/* 쿠키 */
+
+.box-cookie{
+    font-size: 12px;
+    line-height: 2;
+    color: #000;
+    border: 1px solid #e4e4e4;
+    padding: 10px 15px;
+}
+
+.box-cookie ul{
+    padding-left: 15px;
+}
+
+.box-cookie ul li:first-child{
+    font-weight: bold;
+}
+
+.box-cookie ul li:last-child{
+    list-style: none;
+    line-height: 1;
+}
+
+.box-cookie .blue{
+    color: #559bfa;
+}
+
+.box-cookie .red{
+    color: #ec5356;
+}
+
+.box-cookie a{
+    color: #559bfa;
+    border: none;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* 뉴스 */
+
+.box-news{
+    border: 1px solid #e4e4e4;
+    padding: 20px 10px;
+}
+
+.box-news a{
+    border: none;
+}
+
+.box-news article{
+    display: inline-flex;
+    flex: auto;
+    border-bottom: 1px solid #e4e4e4;
+    margin: 15px 10px;
+}
+
+.box-news article:last-child{
+    border-bottom: none;
+}
+
+.box-news article img{
+    display: inline-block;
+}
+
+.news-content{
+    display: inline-block;
+    font-size: 12px;
+    color: #000;
+  
+}
+
+.news-content h4{
+    margin: 0 0;
+}
+
+.news-content h4 a{
+    font-size: 14px;
+    color: #00c;
+    text-decoration: underline;
+}
+
+/* 웹툰 */
+
+.box-toon{
+    border: 1px solid #e4e4e4;
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-toon a{
+    border: none;
+}
+
+.box-toon article{
+    margin-right: 12px;
+    flex: auto;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.web-article img{
+    width: 100%;
+}
+
+.web-title{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+}
+
+.web-content{
+    text-align: left;
+    margin : 0 0;
+    background: none;
+    font-size: 12px;
+    color: #000;
+}
+
+.web-article h3{
+    font-size: 14px;
+   
+    background: none;
+    border: none;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.web-article a:hover{
+    text-decoration: underline;
+}
+
+.cuttoon{
+    border: 1px solid #71b036;
+    background-color: #80c83d;
+    font-size: 10px;
+    color: #fff;
+}
+
+.smarttoon{
+    border: 1px solid #df4e28;
+    background-color: #ec5356;
+    font-size: 10px;
+    color: #fff;
+}
+/* footer 영역 */
+
+footer{
+    text-align: center;
+    border-top: 1px solid #d1d1d1;
+    height: 110px;
+    font-size: 12px;
+    color: #000;
+}
+
+.address{
+    color: #999;
+}
