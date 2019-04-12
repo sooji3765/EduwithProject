@@ -38,4 +38,14 @@
 4. 코드 유효성 검사를 통과합니다. (https://jigsaw.w3.org/css-validator/)
 
 #### 크로스 브라우징
-IE10 이상 / 크롬, 파이어폭스, 웨일은 최신 버전에서 확인합니다.        
+IE10 이상 / 크롬, 파이어폭스, 웨일은 최신 버전에서 확인합니다.
+
+## 프로젝트 결과
+
+![screen_portfoliojpg](https://user-images.githubusercontent.com/26784875/56026117-7697c180-5d4e-11e9-999a-4be490acfd16.jpg)
+
+## 수정할 점
+
+1. 리스트 스타일 변경 방법을 찾아야함
+2. display, flex 사용시 정확하게 알고 쓰기.
+
