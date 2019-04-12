@@ -9,6 +9,9 @@
 
 ## 프로젝트 가이드
 
+![portfolio_layout](https://user-images.githubusercontent.com/26784875/56025539-4996df00-5d4d-11e9-9356-02aed32de189.png)
+
+[포트폴리오.pdf](https://github.com/sooji3765/EduwithProject/files/3072468/default.pdf)
 
 
 ## 프로젝트 폴더 구조
