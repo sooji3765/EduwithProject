@@ -40,3 +40,9 @@
 - 새로운todo등록 버튼을 클릭하면 TodoFormServlet이 실행되고, TodoFormServlet은 todoForm.jsp로 포워딩하여 할 일 등록 화면을 보여줍니다.
 - 할 일 등록폼에서 값을 입력하고 제출 버튼을 누르면 post 방식으로 TodoAddServlet으로 값이 전달되고, TodoAddServlet에서는 TodoDao를 이용해서 테이블에 저장하고 메인화면으로 리다이렉트합니다.
 - 메인화면에서 todo 상태변경버튼(->)을 클릭하면 TodoTypeServlet에게 Todo 의 Id와 상태 값을 전달하여 다음 상태로 (현재 상태가 TODO라면 DOING으로 DOING 이라면 DONE로) TodoDao를 이용해서 변경합니다.
+
+### 클래스 구조
+  ![tododao](https://user-images.githubusercontent.com/26784875/56298232-c3273680-616c-11e9-9ad7-01dcdc5d5148.png)
+
+## 구현 결과
+![Screenshot 2019-04-17 at 23 56 57](https://user-images.githubusercontent.com/26784875/56298195-b1459380-616c-11e9-9e6d-c3180fc66cc3.jpg)
