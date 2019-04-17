@@ -46,3 +46,6 @@
 
 ## 구현 결과
 ![Screenshot 2019-04-17 at 23 56 57](https://user-images.githubusercontent.com/26784875/56298195-b1459380-616c-11e9-9e6d-c3180fc66cc3.jpg)
+
+### 실행 영상
+![bandicam-2019-04-18-00-24-15-877](https://user-images.githubusercontent.com/26784875/56300409-e227c780-6170-11e9-9141-207a53e2e8c8.gif)
