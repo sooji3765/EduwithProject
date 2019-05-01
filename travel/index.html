@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel WebSite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>TRAVEL</h1>
+    <div id="menu">
+        <a id="newyork">NewYork</a>
+        <a id="seoul">Seoul</a>
+        <a id="tokyo">Tokyo</a>
+        <a id="paris">Paris</a>
+    </div>
+    <img src="img/newyork.jpg" alt="" id="photo" >
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+<script>
+
+    function changeNewyork(){
+        $('#photo').attr('src','img/newyork.jpg');
+        $('#newyork').css('font-weight','bold');
+        $('#seoul').css('font-weight','normal');
+        $('#tokyo').css('font-weight','normal');
+        $('#paris').css('font-weight','normal');
+        // document.getElementById("photo").src ="img/newyork.jpg";
+        // document.getElementById("newyork").style.fontWeight ='bold';
+        // document.getElementById("seoul").style.fontWeight ='normal';
+        // document.getElementById("tokyo").style.fontWeight ='normal';
+        // document.getElementById("paris").style.fontWeight ='normal';
+    }
+
+    function changeSeoul(){
+        document.getElementById("photo").src ="img/seoul.jpg";
+        document.getElementById("newyork").style.fontWeight ='normal';
+        document.getElementById("seoul").style.fontWeight ='bold';
+        document.getElementById("tokyo").style.fontWeight ='normal';
+        document.getElementById("paris").style.fontWeight ='normal';
+    }
+
+    function changeTokyo(){
+        document.getElementById("photo").src ="img/tokyo.jpg";
+        document.getElementById("newyork").style.fontWeight ='normal';
+        document.getElementById("seoul").style.fontWeight ='normal';
+        document.getElementById("tokyo").style.fontWeight ='bold';
+        document.getElementById("paris").style.fontWeight ='normal';
+    }
+
+    function changeParis(){
+        document.getElementById("photo").src ="img/paris.jpg";
+        document.getElementById("newyork").style.fontWeight ='normal';
+        document.getElementById("seoul").style.fontWeight ='normal';
+        document.getElementById("tokyo").style.fontWeight ='normal';
+        document.getElementById("paris").style.fontWeight ='bold';
+    }
+
+    // 사진에 그림자
+
+    function mouseHandler(){
+        $("#photo").css('box-shadow','5px 10px');
+    }
+
+    function mouseLeavePhoto(){
+        $("#photo").css('box-shadow','none');
+    }
+
+    function processKeyEvent(event) {
+        if(event['key']==='1'){
+            changeNewyork();
+        }else if(event['key']==='2'){
+            changeSeoul();
+        }else if(event['key']==='3'){
+            changeTokyo();
+
+        }else if(event['key']==='4'){
+            changeParis();
+        }
+        
+    }
+
+    $(document).on('keydown',processKeyEvent);
+    $("#newyork").on('click',changeNewyork);
+    $("#seoul").on('click',changeSeoul);
+    $("#tokyo").on('click',changeTokyo);
+    $("#paris").on('click',changeParis);
+
+    $("#photo").on('mouseenter',mouseHandler);
+    $("#photo").on('mouseleave',mouseLeavePhoto);
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>로그인</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+</head>
+<body>
+  <div class="login-form">
+    <form>
+      <input type="text" name="email" id="email-input" class="text-field" placeholder="아이디"><br>
+      <input type="password" name="password" id="password-input" class="text-field" placeholder="비밀번호"><br>
+      <input type="submit" value="로그인" id="submit-btn">
+    </form>
+
+    <div class="links">
+      <a href="#">비밀번호를 잊어버리셨나요?</a>
+    </div>
+  </div>
+</body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+
+   // document.querySelector("#email-input").addEventListener('input',inputCheck);
+    //document.querySelector("#password-input").addEventListener('input',inputCheck);
+    $('#email-input').on('input', inputCheck );
+    $('#password-input').on('input', inputCheck);
+
+    function inputCheck(){
+        var id = $("#email-input").val();
+        var pass =$("#password-input").val();
+        
+        console.log(id);
+        if(id.length>0 && pass.length>0){
+            $("#submit-btn").css('background-color','#1BBC9B');
+        }else{
+            $("#submit-btn").css('background-color','#9B9B9B');
+        }
+    }
+  </script>
+</html>

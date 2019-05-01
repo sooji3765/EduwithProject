@@ -1,0 +1,26 @@
+h1{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#menu {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+#menu a{
+    padding: 7px; 
+}
+
+#menu a:first-child{
+    font-weight: bold;
+}
+
+img{
+    align-content: center;
+    display: block;
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
