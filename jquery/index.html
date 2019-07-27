@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="hello">Hi Code</button>
+
+    <ul>
+        <li>청소</li>
+        <li>코딩</li>
+        <li>숙제</li>
+        <li>영화</li>
+    </ul>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    $("#hello").on('click',sayHello);
+
+    function sayHello() {
+        alert($("#hello").text());
+        $("#hello").css('background-color','#7f8ff4');
+        $('li').after('<li>rohdfhsd</li>');
+    }
+
+    $('li').on('click',changeText);
+
+    function changeText(event){
+        var list = event.currentTarget.innerHTML;
+
+        $("#hello").text(list);
+    }
+
+</script>
+</html>

@@ -9,7 +9,8 @@ h1{
     font-size: 1.2em;
 }
 #menu a{
-    padding: 7px; 
+    padding: 7px;
+    cursor: pointer; 
 }
 
 #menu a:first-child{

@@ -23,42 +23,70 @@
   crossorigin="anonymous"></script>
 <script>
 
-    function changeNewyork(){
-        $('#photo').attr('src','img/newyork.jpg');
-        $('#newyork').css('font-weight','bold');
-        $('#seoul').css('font-weight','normal');
-        $('#tokyo').css('font-weight','normal');
-        $('#paris').css('font-weight','normal');
-        // document.getElementById("photo").src ="img/newyork.jpg";
-        // document.getElementById("newyork").style.fontWeight ='bold';
-        // document.getElementById("seoul").style.fontWeight ='normal';
-        // document.getElementById("tokyo").style.fontWeight ='normal';
-        // document.getElementById("paris").style.fontWeight ='normal';
+    $("#menu a").on('click',selectMenu);
+    $(document).on('keydown',selectMenu);
+
+    function selectMenu(event){
+        var targetName =''; 
+        console.log(event);
+        if(event.type==='click'){
+            targetName=event.currentTarget.id;
+        }else if(event.type==='keydown'){
+            if(event.key==='1'){
+                targetName ='newyork';
+            }else if(event.key==='2'){
+                targetName ='seoul';
+            }else if(event.key==='3'){
+                targetName ='tokyo';
+            }else if(event.key==='4'){
+                targetName ='paris';
+            }
+        }
+
+        $('#photo').hide();
+        $('#photo').attr('src','img/'+targetName+'.jpg');
+        $('#photo').fadeIn(2000);
+        $('#menu a').css('font-weight','normal');
+        $('#'+targetName).css('font-weight','bold');
+        
     }
 
-    function changeSeoul(){
-        document.getElementById("photo").src ="img/seoul.jpg";
-        document.getElementById("newyork").style.fontWeight ='normal';
-        document.getElementById("seoul").style.fontWeight ='bold';
-        document.getElementById("tokyo").style.fontWeight ='normal';
-        document.getElementById("paris").style.fontWeight ='normal';
-    }
+    // function changeNewyork(){
+    //     $('#photo').attr('src','img/newyork.jpg');
+    //     $('#newyork').css('font-weight','bold');
+    //     $('#seoul').css('font-weight','normal');
+    //     $('#tokyo').css('font-weight','normal');
+    //     $('#paris').css('font-weight','normal');
+    //     // document.getElementById("photo").src ="img/newyork.jpg";
+    //     // document.getElementById("newyork").style.fontWeight ='bold';
+    //     // document.getElementById("seoul").style.fontWeight ='normal';
+    //     // document.getElementById("tokyo").style.fontWeight ='normal';
+    //     // document.getElementById("paris").style.fontWeight ='normal';
+    // }
 
-    function changeTokyo(){
-        document.getElementById("photo").src ="img/tokyo.jpg";
-        document.getElementById("newyork").style.fontWeight ='normal';
-        document.getElementById("seoul").style.fontWeight ='normal';
-        document.getElementById("tokyo").style.fontWeight ='bold';
-        document.getElementById("paris").style.fontWeight ='normal';
-    }
+    // function changeSeoul(){
+    //     document.getElementById("photo").src ="img/seoul.jpg";
+    //     document.getElementById("newyork").style.fontWeight ='normal';
+    //     document.getElementById("seoul").style.fontWeight ='bold';
+    //     document.getElementById("tokyo").style.fontWeight ='normal';
+    //     document.getElementById("paris").style.fontWeight ='normal';
+    // }
 
-    function changeParis(){
-        document.getElementById("photo").src ="img/paris.jpg";
-        document.getElementById("newyork").style.fontWeight ='normal';
-        document.getElementById("seoul").style.fontWeight ='normal';
-        document.getElementById("tokyo").style.fontWeight ='normal';
-        document.getElementById("paris").style.fontWeight ='bold';
-    }
+    // function changeTokyo(){
+    //     document.getElementById("photo").src ="img/tokyo.jpg";
+    //     document.getElementById("newyork").style.fontWeight ='normal';
+    //     document.getElementById("seoul").style.fontWeight ='normal';
+    //     document.getElementById("tokyo").style.fontWeight ='bold';
+    //     document.getElementById("paris").style.fontWeight ='normal';
+    // }
+
+    // function changeParis(){
+    //     document.getElementById("photo").src ="img/paris.jpg";
+    //     document.getElementById("newyork").style.fontWeight ='normal';
+    //     document.getElementById("seoul").style.fontWeight ='normal';
+    //     document.getElementById("tokyo").style.fontWeight ='normal';
+    //     document.getElementById("paris").style.fontWeight ='bold';
+    // }
 
     // 사진에 그림자
 
@@ -84,11 +112,11 @@
         
     }
 
-    $(document).on('keydown',processKeyEvent);
-    $("#newyork").on('click',changeNewyork);
-    $("#seoul").on('click',changeSeoul);
-    $("#tokyo").on('click',changeTokyo);
-    $("#paris").on('click',changeParis);
+   // $(document).on('keydown',processKeyEvent);
+    // $("#newyork").on('click',changeNewyork);
+    // $("#seoul").on('click',changeSeoul);
+    // $("#tokyo").on('click',changeTokyo);
+    // $("#paris").on('click',changeParis);
 
     $("#photo").on('mouseenter',mouseHandler);
     $("#photo").on('mouseleave',mouseLeavePhoto);

@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+#scroll{
+    margin: 0 0;
+    height: 60px;
+    background-color: deepskyblue;
+    color: white;
+}
+
+#scroll h3{
+    align-items: center;
+    text-align: left;
+}
+
+#btn-area{
+    margin-top: 500px;
+    
+}
+
+#btn-area button{
+    border: solid 1px #e4e4e4;
+    padding: 20px;
+    font-size: 1em;
+    background-color: deepskyblue;
+    color: white;
+    float: right;
+}
