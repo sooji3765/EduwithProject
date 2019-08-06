@@ -1,2 +1,2 @@
-# EduwithProject
+# EdwithProject
 eduwith 과제 
